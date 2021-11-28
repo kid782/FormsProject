@@ -4,81 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
+    <script
+      src="https://kit.fontawesome.com/86ebcb93d3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__cta">
-        <p class="header__p"></p>
-        <p class="header__p"></p>
-        <button class="header__button"></button>
-      </div>
-    </header>
-    <main class="main">
-      <h1 class="sign-up__title">intuit</h1>
-      <div class="sign-up__under-title">
-        <span class="sign-up__span">mint</span
-        ><img src="" alt="" class="sign-up__icon" />
-      </div>
-      <div class="sign-up__under-title">
-        <span class="sign-up__span">quickbooks</span
-        ><img src="" alt="" class="sign-up__icon" />
-      </div>
-      <div class="sign-up__under-title">
-        <span class="sign-up__span">turbotax</span
-        ><img src="" alt="" class="sign-up__icon" />
-      </div>
-      <div class="sign-up__container">
-        <h2 class="sign-up__sub-title">Create an Intuit account</h2>
-        <p class="sign-up__info"></p>
-        <form method="post" action="" class="sign-up__form">
-          <ul class="sign-up__list">
-            <li class="sign-up__item">
-              <label for="email" class="sign-up__label"></label
-              ><input type="text" class="sign-up__input" id="email" />
-            </li>
-            <li class="sign-up__item">
-              <label for="phone" class="sign-up__label"></label
-              ><input type="text" class="sign-up__input" id="phone" />
-              <p class="sign-up__tip">
-                Standard call,message, or data rates may apply
-              </p>
-            </li>
-            <li class="sign-up__item">
-              <label for="password" class="sign-up__label"></label
-              ><input type="text" class="sign-up__input" id="password" />
-            </li>
-            <li class="sign-up__item sign-up__item-button">
-              <img src="" alt="" />
-              <input type="button" value="Create Account" />
-            </li>
-          </ul>
-        </form>
-        <p class="sign-up__privacy">
-          By selecting Create account, you agree to our <a href="">Terms</a> and
-          have read and acknowledge our
-          <a href="" class="">Global Privacy Statement</a>
-        </p>
-
-        <p class="sign-up__privacy-2">
-          Invisible reCAPTCHA by google
-          <a href="" class="">Privacy Policy</a> and <a href="">Terms of Use</a>
-        </p>
-      </div>
-      <div class="sign-up__container-2">
-        <p class="sign-up__p">Legal Privacy Security</p>
-        <p class="sign-up__p">
-          © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
-          TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
-        </p>
-        <p class="sign-up__p">
-          Terms and conditions, features, support, pricing, and service options
-          subject to change without notice.
-        </p>
-      </div>
-    </main>
-    <footer class="footer">
-      <a href="" class="footer__link">Privacy Settings</a>
-    </footer>
+    <div class="grid">
+      <header class="header">
+        <div class="header__cta">
+          <div class="header__p-container">
+            <p class="header__p">Already have an Intuit account?</p>
+            <p class="header__p">
+              <a href="" class="">I forgot my User ID or Password</a>
+            </p>
+          </div>
+          <button class="header__button">
+            <i class="fas fa-lock"></i> Sign In
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="sign-up__logo"></div>
+        <div class="sign-up__under-title-container">
+          <div class="sign-up__under-title">
+            <i class="fas fa-tint"></i>
+            <span class="sign-up__span">mint</span>
+          </div>
+          <div class="sign-up__under-title">
+            <i class="fab fa-stumbleupon-circle"></i>
+            <span class="sign-up__span">quickbooks</span>
+          </div>
+          <div class="sign-up__under-title">
+            <i class="fas fa-check-circle"></i>
+            <span class="sign-up__span">turbotax</span>
+          </div>
+        </div>
+        <div class="sign-up__container">
+          <h2 class="sign-up__sub-title">Create an Intuit account</h2>
+          <p class="sign-up__info">
+            One account for everything Intuit, including Mind.
+            <a href="" class="">Learn more</a>
+          </p>
+          <form method="post" action="" class="sign-up__form">
+            <ul class="sign-up__list">
+              <li class="sign-up__item">
+                <label for="email" class="sign-up__label">Email</label
+                ><input type="text" class="sign-up__input" id="email" />
+              </li>
+              <li class="sign-up__item">
+                <label for="phone" class="sign-up__label"
+                  >Phone
+                  <span class="sign-up__label-style">(recommended)</span></label
+                ><input type="text" class="sign-up__input" id="phone" />
+                <p class="sign-up__tip">
+                  Standard call,message, or data rates may apply
+                </p>
+              </li>
+              <li class="sign-up__item">
+                <label for="password" class="sign-up__label">Password</label>
+                <div class="sign-up__password-input">
+                  <input type="text" class="sign-up__input" id="password" />
+                  <i class="fas fa-unlock-alt"></i>
+                </div>
+              </li>
+              <li class="sign-up__item sign-up__item-button">
+                <button type="submit">
+                  <i class="fas fa-lock"></i> Create Account
+                </button>
+              </li>
+            </ul>
+          </form>
+          <p class="sign-up__privacy">
+            By selecting Create account, you agree to our
+            <a href="">Terms</a> and have read and acknowledge our
+            <a href="" class="">Global Privacy Statement</a>
+          </p>
+          <p class="sign-up__privacy-2">
+            Invisible reCAPTCHA by google
+            <a href="" class="">Privacy Policy</a> and
+            <a href="">Terms of Use</a>
+          </p>
+        </div>
+        <div class="sign-up__container-2">
+          <p class="sign-up__p">Legal Privacy Security</p>
+          <p class="sign-up__p">
+            © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
+            TurboTax, ProConnect and Mint are registered trademarks of Intuit
+            Inc.
+          </p>
+          <p class="sign-up__p">
+            Terms and conditions, features, support, pricing, and service
+            options subject to change without notice.
+          </p>
+        </div>
+      </main>
+      <footer class="footer">
+        <a href="" class="footer__link">Privacy Settings</a>
+      </footer>
+    </div>
   </body>
 </html>

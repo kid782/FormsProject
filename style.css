@@ -1,0 +1,200 @@
+:root {
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --blue: #0077c5;
+  --gray: #505050;
+  --gray-text: #393a3d;
+  --light-gray: #c7c7c7;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+}
+p {
+  margin: 0 0 15px 0;
+}
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+label {
+  color: var(--gray);
+}
+input {
+  height: 34px;
+  border: var(--light-gray) 1px solid;
+  border-radius: 2px;
+}
+.grid {
+  display: grid;
+  grid-template-rows: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  justify-items: center;
+  background: rgb(243, 245, 250);
+}
+
+.header {
+  display: grid;
+  padding: 0.5em 2em;
+  width: 100%;
+}
+
+.header__cta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: min-content;
+  grid-column-gap: 1em;
+  align-items: center;
+  justify-items: center;
+  justify-self: end;
+  padding: 0 1em;
+}
+.header__p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.header__p-container {
+  grid-column: 1 / 2;
+}
+
+.header__button {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 0.5em 2em;
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+  background: var(--blue);
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up__under-title-container {
+  display: flex;
+  gap: 1em;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+.fas.fa-tint {
+  color: rgb(44, 201, 201);
+  font-size: 1.7rem;
+}
+.fab.fa-stumbleupon-circle {
+  color: green;
+  font-size: 1.7rem;
+}
+.fas.fa-check-circle {
+  color: red;
+  font-size: 1.7rem;
+}
+.fas.fa-unlock-alt {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  border: 0;
+  height: 100%;
+  min-width: 40px;
+  color: var(--light-gray);
+  font-size: 1.4rem;
+}
+.sign-up__container {
+  display: grid;
+  grid-template-columns: minmax(200px, 400px);
+  grid-row-gap: 1em;
+  justify-content: center;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  padding: 2em 2em;
+  text-align: left;
+  margin: 1.5em 0;
+  background: white;
+}
+.sign-up__logo {
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/scripts/../images/ecosystem_logos_new-0b45bf36..png);
+  width: 118px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.sign-up__form {
+  margin-top: 1em;
+}
+.sign-up__sub-title {
+  color: var(--gray);
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: ;
+}
+.sign-up__info {
+  font-size: 14px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+.sign-up__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.sign-up__tip {
+  margin: 0;
+}
+
+.sign-up__item {
+  display: grid;
+  grid-row-gap: 0.5em;
+}
+
+.sign-up__container-2 {
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray);
+}
+.sign-up__password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--light-gray);
+}
+
+input[id="password"] {
+  flex: 1;
+  border: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  padding-left: 2em;
+  background: white;
+}
